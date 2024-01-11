@@ -13,16 +13,13 @@ def total_gic(principal, interest):
     float: The total amount after the investment period, which is the sum of the principal and interest.
 
     Example:
-    For a principal of $1000 and interest of $200, the function will return $1200.
+    principal_amount = 1000.0  
+    accumulated_interest = 200.0  # Replace with the calculated interest
+    total_amount = total_gic(principal_amount, accumulated_interest)
+    print(f"Total amount after adding interest: ${total_amount:.2f}")
     """
 
     # Calculate the total amount
     total_amount = principal + interest
 
     return total_amount
-
-# Example usage
-# principal_amount = 1000.0  # Replace with actual principal amount
-# accumulated_interest = 200.0  # Replace with the calculated interest
-# total_amount = total_gic(principal_amount, accumulated_interest)
-# print(f"Total amount after adding interest: ${total_amount:.2f}")
