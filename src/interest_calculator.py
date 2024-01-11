@@ -32,6 +32,6 @@ def interest_calc(principal, term_length, gic_rate=None):
 
     Examples
     --------
-    >>> function_name(5000, 180, 3.90)
+    >>> interest_calc(5000, 180, 3.90)
     96.16
     """
