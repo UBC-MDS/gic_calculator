@@ -32,13 +32,12 @@ By providing targeted functionality, the proposed package offers a more user-fri
 
 `gic_calculator` was created by Angela Chen, Tony Shum(@tonyshumlh), Ruocong Sun (@sungg888), Alysen Townsley (@AlysenTownsley).
 
-```bash
-$ pip install gic_calculator
-```
 
 ## Usage
 
-- TODO
+```bash
+$ pip install gic_calculator
+```
 
 ## Contributing
 
