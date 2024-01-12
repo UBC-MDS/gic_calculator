@@ -34,7 +34,6 @@ Tony Shum @tonyshumlh
 Ruocong Sun @sungg888 
 Alysen Townsley @AlysenTownsley 
 
-## Installation
 
 ```bash
 $ pip install gic_calculator
