@@ -16,7 +16,7 @@ Inputs: principal amount, Number of years of investment and annual interest rate
 Description: Calculates the difference in total returns (interest + principal) of a GIC between two different investment periods.
 Functionality: Utilizes calculate_gic_interest to determine the interest for two different periods and then finds the difference.
 
-(3) plot_gic_difference(n1_year, n2_year, principal, interest_rate) 
+(3) gic_plotting(interests, term_lengths)
 
 Description: Generates a bar plot to visually represent the difference in returns as calculated by calculate_gic_difference.
 Purpose: Helps users to easily visualize and understand the financial impact of investing for different durations.
