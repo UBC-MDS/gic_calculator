@@ -9,7 +9,7 @@ This project involves developing a Python package designed to assist users in un
 (1) interest_calc(principal, term_length, gic_rate=None)
 
 Description: Calculates the interest earned on a GIC after a specified number of years.
-Inputs: principal amount, Number of years of investment and annual interest rate.
+Inputs: principal amount, term length of investment and GIC rate.
 
 (2) calculate_gic_difference(n1_year, n2_year, principal, interest_rate)
 
