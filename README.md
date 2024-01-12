@@ -28,6 +28,12 @@ There are several Python packages focused on financial calculations and investme
 
 By providing targeted functionality, the proposed package offers a more user-friendly and focused approach for individuals specifically dealing with GIC investments, setting it apart from more general financial analysis tools.
 
+## Contributors
+
+Tony Shum @tonyshumlh 
+Ruocong Sun @sungg888 
+Alysen Townsley @AlysenTownsley 
+
 ## Installation
 
 ```bash
