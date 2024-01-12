@@ -30,10 +30,7 @@ By providing targeted functionality, the proposed package offers a more user-fri
 
 ## Contributors
 
-Tony Shum @tonyshumlh 
-Ruocong Sun @sungg888 
-Alysen Townsley @AlysenTownsley 
-
+`gic_calculator` was created by Angela Chen, Tony Shum(@tonyshumlh), Ruocong Sun (@sungg888), Alysen Townsley (@AlysenTownsley).
 
 ```bash
 $ pip install gic_calculator
@@ -49,7 +46,7 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## License
 
-`gic_calculator` was created by Angela Chen, Tony Shum, Ruocong Sun, Alysen Townsley. It is licensed under the terms of the MIT license.
+`gic_calculator` is licensed under the terms of the MIT license.
 
 ## Credits
 
