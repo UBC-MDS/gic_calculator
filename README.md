@@ -14,7 +14,7 @@ Inputs: principal amount, term length of investment and GIC rate.
 (2) calculate_gic_difference(n1_year, n2_year, principal, interest_rate)
 
 Description: Calculates the difference in total returns (interest + principal) of a GIC between two different investment periods.
-Functionality: Utilizes calculate_gic_interest to determine the interest for two different periods and then finds the difference.
+Functionality: Utilizes the interest_calc function to determine the interest for two different periods and then finds the difference.
 
 (3) gic_plotting(interests, term_lengths)
 
