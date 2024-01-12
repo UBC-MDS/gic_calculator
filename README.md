@@ -2,13 +2,31 @@
 
 ## Summary
 
-The Python package is designed as a comprehensive GIC (Guaranteed Investment Certificate) calculator, tailored for users in a Python environment. It comprises four key functions:
+### Project Summary
+This project involves developing a Python package designed to assist users in understanding and analyzing the financial returns from Guaranteed Investment Certificates (GICs). The package focuses on calculating the interest returns over different investment periods, comparing these returns, and providing a visual representation of the differences. This utility will be particularly useful for investors and financial advisors who need to make informed decisions regarding GIC investments.
 
-Interest Calculation: This function allows users to calculate the GIC interest return by inputting the principal amount, interest rate, and duration in years.
-Total Return Calculation: This function combines the calculated interest with the principal to provide the total return on the investment.
-Comparative Analysis: It enables users to understand the impact of choosing different durations for their GIC investment by calculating the difference in returns.
-Visualization Tool: The package includes a bar plot feature, which visually represents the differences in returns for various durations, enhancing user understanding and decision-making.
-The overarching goal of this package is to provide an easy-to-use, efficient tool for financial analysis and decision-making regarding GIC investments.
+### Functions Included in the Package
+(1) interest_calc(principal, term_length, gic_rate=None)
+
+Description: Calculates the interest earned on a GIC after a specified number of years.
+Inputs: principal amount, Number of years of investment and annual interest rate.
+
+(2) calculate_gic_difference(n1_year, n2_year, principal, interest_rate)
+
+Description: Calculates the difference in total returns (interest + principal) of a GIC between two different investment periods.
+Functionality: Utilizes calculate_gic_interest to determine the interest for two different periods and then finds the difference.
+
+(3) plot_gic_difference(n1_year, n2_year, principal, interest_rate) 
+
+Description: Generates a bar plot to visually represent the difference in returns as calculated by calculate_gic_difference.
+Purpose: Helps users to easily visualize and understand the financial impact of investing for different durations.
+
+
+### Fit into the Python Ecosystem
+
+There are several Python packages focused on financial calculations and investment analysis, such as numpy-financial or pandas, which are used for a wide range of financial computations and data analysis. However, a specialized package focusing exclusively on GIC investment analysis, particularly one that compares returns over different investment periods and visualizes these comparisons appears to be unique. This package would thus fill a niche for those specifically interested in GIC investments.
+
+By providing targeted functionality, the proposed package offers a more user-friendly and focused approach for individuals specifically dealing with GIC investments, setting it apart from more general financial analysis tools.
 
 ## Installation
 
