@@ -1,6 +1,6 @@
 # Contributing
 
-Core Contributors: Angela Chen, Tony Shum, Ruocong Sun, Alysen Townsley
+Core Contributors: Tony Shum, Ruocong Sun, Alysen Townsley
 
 Contributions are welcome, and they are greatly appreciated! Every little bit
 helps, and credit will always be given.
@@ -11,6 +11,7 @@ helps, and credit will always be given.
 
 If you are reporting a bug, please include:
 
+* Open an Issue [here](https://github.com/UBC-MDS/gic_calculator/issues) and explain the following.
 * Your operating system name and version.
 * Any details about your local setup that might be helpful in troubleshooting.
 * Detailed steps to reproduce the bug.
@@ -35,7 +36,7 @@ on the web in blog posts, articles, and such.
 
 If you are proposing a feature:
 
-* Explain in detail how it would work.
+* Open an Issue [here](https://github.com/UBC-MDS/gic_calculator/issues) and explain in detail how it would work.
 * Keep the scope as narrow as possible, to make it easier to implement.
 * Remember that this is a volunteer-driven project, and that contributions
   are welcome :)
@@ -72,4 +73,4 @@ Before you submit a pull request, check that it meets these guidelines:
 ## Code of Conduct
 
 Please note that the `gic_calculator` project is released with a
-Code of Conduct. By contributing to this project you agree to abide by its terms.
+[Code of Conduct](CONDUCT.md). By contributing to this project you agree to abide by its terms.
