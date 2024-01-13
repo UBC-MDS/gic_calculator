@@ -30,7 +30,7 @@ By providing targeted functionality, the proposed package offers a more user-fri
 
 ## Contributors
 
-`gic_calculator` was created by Angela Chen, Tony Shum(@tonyshumlh), Ruocong Sun (@sungg888), Alysen Townsley (@AlysenTownsley).
+`gic_calculator` was created by Angela Chen (@angelachenmo), Tony Shum(@tonyshumlh), Ruocong Sun (@sungg888), Alysen Townsley (@AlysenTownsley).
 
 
 ## Usage
