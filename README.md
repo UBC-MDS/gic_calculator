@@ -16,7 +16,12 @@ Inputs: principal amount, term length of investment and GIC rate.
 Description: Calculates the difference in total returns (interest + principal) of a GIC between two different investment periods.
 Functionality: Utilizes the interest_calc function to determine the interest for two different periods and then finds the difference.
 
-(3) gic_plotting(interests, term_lengths)
+(3) total_gic(principal, interest):
+
+Description: Calculates the total amount for a Guaranteed Investment Certificate (GIC) after a specified number of years.
+Functionality: Utilizes the interest_calc function to determine the total amount for two different periods.
+
+(4) gic_plotting(interests, term_lengths)
 
 Description: Generates a bar plot to visually represent the difference in returns as calculated by calculate_gic_difference.
 Purpose: Helps users to easily visualize and understand the financial impact of investing for different durations.
