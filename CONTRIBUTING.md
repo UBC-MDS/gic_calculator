@@ -1,6 +1,6 @@
 # Contributing
 
-Core Contributors: Tony Shum, Ruocong Sun, Alysen Townsley
+Core Contributors: Angela Chen (@angelachenmo), Tony Shum(@tonyshumlh), Ruocong Sun (@sungg888), Alysen Townsley (@AlysenTownsley)
 
 Contributions are welcome, and they are greatly appreciated! Every little bit
 helps, and credit will always be given.
