@@ -1,4 +1,4 @@
-from gic_calculator import gic_calculator
+from src.gic_calculator import gic_calculator
 import pytest
 
 def test_total_gic_positive_interest():

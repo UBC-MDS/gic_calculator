@@ -1,5 +1,5 @@
 import pytest
-from gic_calculator import gic_calculator
+from src.gic_calculator import total_gic
 
 class TestTotalGIC:
 
