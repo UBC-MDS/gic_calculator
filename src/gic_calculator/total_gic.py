@@ -1,6 +1,6 @@
 def total_gic(principal, interest):
     """
-    Calculate the total amount for a Guaranteed Investment Certificate (GIC) after n years.
+    Calculate the total amount of a Guaranteed Investment Certificate (GIC) after maturity of the GIC.
 
     This function computes the total amount by adding the pre-calculated interest to the principal amount.
     It assumes that the interest has been calculated separately over a certain number of years.
