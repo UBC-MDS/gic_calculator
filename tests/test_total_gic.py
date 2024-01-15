@@ -1,7 +1,5 @@
+from gic_calculator import gic_calculator
 import pytest
-import sys
-sys.path.append("/src/gic_calculator")
-from gic_calculator import total_gic
 
 def test_total_gic_positive_interest():
     principal_amount = 1000.0
