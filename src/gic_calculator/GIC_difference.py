@@ -1,30 +1,33 @@
-def calculate_gic_difference(n1_year, n2_year, principal, interest_rate):
+def calculate_gic_difference(n1_year, n2_year, principal, interest_rate1=None, interest_rate2=None):
     """
-    Calculate the difference in total returns (interest + principal) of a GIC between two different investment periods.
+    Calculate and return the difference in total returns between two GIC (Guaranteed Investment Certificate) investment periods.
 
-    This function uses the calculate_gic_interest function to find the interest for two different investment periods
-    and then calculates the difference in total returns (interest + principal).
+    This function computes the total returns (both interest and principal) for two distinct GIC investment periods,
+    using different or identical annual interest rates for each period. It then calculates the difference in these total
+    returns, effectively comparing the profitability of the two investment durations.
 
     Parameters:
     ----------
-    n1_year (int): The number of years for the first investment period.
-    n2_year (int): The number of years for the second investment period.
-    principal (float): The initial amount of money invested.
-    interest_rate (float): Annual interest rate in percentage.
+    n1_year (int): The duration in years of the first investment period.
+    n2_year (int): The duration in years of the second investment period.
+    principal (float): The initial amount of money invested in both periods.
+    interest_rate1 (float, optional): Annual interest rate (in percentage) for the first period. If not provided,
+                                       a default value defined in `calculate_gic_interest` is used.
+    interest_rate2 (float, optional): Annual interest rate (in percentage) for the second period. If not provided,
+                                       it assumes the same rate as interest_rate1 or the default from `calculate_gic_interest`.
 
     Returns:
     ----------
-    float: The difference in total returns (interest + principal) between the two investment periods.
+    float: The difference in the total returns (sum of interest and principal) between the two investment periods.
 
     Example:
     ----------
-    >>> difference = calculate_gic_difference(5, 10, 1000, 2.5)
+    >>> difference = calculate_gic_difference(5, 10, 1000, 2.5, 3.0)
     >>> print(f"Difference in GIC returns between 5 and 10 years: ${difference:.2f}")
-
     """
     # Calculate interest for both periods
-    interest_n1 = calculate_gic_interest(n1_year, principal, interest_rate)
-    interest_n2 = calculate_gic_interest(n2_year, principal, interest_rate)
+    interest_n1 = calculate_gic_interest(n1_year, principal, interest_rate1)
+    interest_n2 = calculate_gic_interest(n2_year, principal, interest_rate2)
 
     # Calculate total returns for both periods
     total_n1 = principal + interest_n1
