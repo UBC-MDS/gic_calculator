@@ -44,6 +44,19 @@ By providing targeted functionality, the proposed package offers a more user-fri
 $ pip install gic_calculator
 ```
 
+## Developer notes
+
+#### Tests
+
+We have included tests and test data for functions used in our analysis
+in the `tests` folder. The test suite can be run at the root of the
+project using the pytest command below:
+
+```         
+pytest tests/*
+```
+
+
 ## Contributing
 
 Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
