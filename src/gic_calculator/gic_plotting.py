@@ -1,4 +1,4 @@
-def gic_plotting(principal, gic_rates=None, term_lengths):
+def gic_plotting(principal, term_lengths, gic_rates=None):
     """GIC interest plotting
 
     Generate, output and export a bar chart to visualize the interest(s) accrued after investment(s) in GIC (Guarenteed Investment
@@ -8,16 +8,16 @@ def gic_plotting(principal, gic_rates=None, term_lengths):
     ----------
     principal : float
         The principal (initial amount) to be invested in the GIC account.
+    term_lengths : list
+        A list of the term length (duration) per each investment. To be one of the following standard options:
+        90, 180, 270, 1, 1.5, 2, 3, or 5 correspond to 90 days, 180 days, 270 days, 1 year, 1.5 years, 2 years, 
+        3 years, 5 years.
     gic_rates : list, optional
         A list of the GIC rate for the term length and investment type (fixed / cashable). This information
         can be found on your bank's website. If a value is not provided by the user, default values 
         will be used based on the specifed term length, as follows (GIC rates have units of percent): 
         90 days = 1.40, 180 days = 3.90, 270 days = 5.10, 1 year = 4.90, 1.5 years = 4.80,
         2 years = 4.10, 3 years = 4.00, 5 years = 3.75.
-    term_lengths : list
-        A list of the term length (duration) per each investment. To be one of the following standard options:
-        90, 180, 270, 1, 1.5, 2, 3, or 5 correspond to 90 days, 180 days, 270 days, 1 year, 1.5 years, 2 years, 
-        3 years, 5 years.
 
     Returns
     -------
@@ -30,7 +30,7 @@ def gic_plotting(principal, gic_rates=None, term_lengths):
     >>> gic_plotting(interests=[17.26, 96.16], term_lengths=[90, 180])
     """
 
-    import altairs as alt
+    import altair as alt
     import pandas as pd
 
     if not isinstance(principal, float) and not isinstance(principal, int):
@@ -65,13 +65,13 @@ def gic_plotting(principal, gic_rates=None, term_lengths):
 
     for i in range(n):
         if gic_rates is None:
-            interest, rate = interest_calc(principal, term_lengths[i])
+            rate, interest = interest_calc(principal, term_lengths[i])
         else:
-            interest, rate = interest_calc(principal, term_lengths[i], gic_rates[i])
+            rate, interest = interest_calc(principal, term_lengths[i], gic_rates[i])
 
         interests.append(interest)
-        title.append(f"""In {term_lengths[i]} {default_info[term_lengths[i]]['unit']}, at an interest rate of {rate}%, \
-        you'll have earned ${interest} in interest.""")
+        title.append(f"""In {term_lengths[i]} {default_info[term_lengths[i]]['unit']}, at an interest rate of {rate:.2f}%, \
+you'll have earned ${interest:.2f} in interest.""")
 
     term_lengths_str = [str(i+1) + ') ' + str(term) + ' ' + default_info[term]['unit'] for i, term in enumerate(term_lengths)]
 
@@ -94,21 +94,19 @@ def gic_plotting(principal, gic_rates=None, term_lengths):
 # Test Case 1
 # check term length is a list of size = 2
 # check term length values are float
-# check term length values are 1 of the available options
-# check 1st term length != 2nd term length?
+# check term length values are 1 of the available options (90, 180, ...)
 
 # Test Case 2
-# check interest rate is a list of size = 2 or = None
+# check interest rate is a list of size = 2 or is None
 # check interest rate value are float
 # check interest rate are >= 0
 
 # Test Case 3
-# check interest size = 2 or = None
 # check interest value are float
 # check interest are >= 0
 
 # Test Case 4
-# check principal is float and > 0
+# check principal is float/int and > 0
 
 # Test Case 5
 # return a chart
