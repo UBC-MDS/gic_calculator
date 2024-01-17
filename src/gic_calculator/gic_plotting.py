@@ -1,3 +1,7 @@
+import altair as alt
+import pandas as pd
+from gic_calculator.interest_calculator import interest_calc
+
 def gic_plotting(principal, term_lengths, gic_rates=None):
     """GIC interest plotting
 
@@ -29,9 +33,6 @@ def gic_plotting(principal, term_lengths, gic_rates=None):
     >>> from gic_calculator.gic_plotting import gic_plotting
     >>> gic_plotting(interests=[17.26, 96.16], term_lengths=[90, 180])
     """
-
-    import altair as alt
-    import pandas as pd
 
     if not isinstance(principal, float) and not isinstance(principal, int):
         raise TypeError("Principal should be a number.")
@@ -89,27 +90,3 @@ you'll have earned ${interest:.2f} in interest.""")
     )
 
     return chart
-
-
-# Test Case 1
-# check term length is a list of size = 2
-# check term length values are float
-# check term length values are 1 of the available options (90, 180, ...)
-
-# Test Case 2
-# check interest rate is a list of size = 2 or is None
-# check interest rate value are float
-# check interest rate are >= 0
-
-# Test Case 3
-# check interest value are float
-# check interest are >= 0
-
-# Test Case 4
-# check principal is float/int and > 0
-
-# Test Case 5
-# return a chart
-# return a non-empty chart
-## incorrect type of column value handling e.g. Investment 1, Investment 2
-## Test for correct error handling for incorrect object type (not a pandas data frame)

@@ -1,4 +1,5 @@
 from gic_calculator.gic_plotting import gic_plotting
+import altair as alt
 import pytest
 
 principal_valid = 1000.0
