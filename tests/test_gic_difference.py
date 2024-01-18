@@ -1,4 +1,4 @@
-from gic_calculator import gic_difference
+from gic_calculator.gic_difference import gic_difference
 import pytest
 
 
