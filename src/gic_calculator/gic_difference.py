@@ -1,4 +1,6 @@
-def calculate_gic_difference(n1_year, n2_year, principal, interest_rate1=None, interest_rate2=None):
+from gic_calculator.interest_calculator import interest_calc
+
+def calculate_gic_difference(term_length_n1, term_length_n2, principal, interest_rate1=None, interest_rate2=None):
     """
     Calculate and return the difference in total returns between two GIC (Guaranteed Investment Certificate) investment periods.
 
@@ -8,13 +10,13 @@ def calculate_gic_difference(n1_year, n2_year, principal, interest_rate1=None, i
 
     Parameters:
     ----------
-    n1_year (int): The duration in years of the first investment period.
-    n2_year (int): The duration in years of the second investment period.
+    term_length_n1 (int): The duration in days or years of the first investment period.
+    term_length_n2 (int): The duration in days or years of the second investment period.
     principal (float): The initial amount of money invested in both periods.
     interest_rate1 (float, optional): Annual interest rate (in percentage) for the first period. If not provided,
-                                       a default value defined in `calculate_gic_interest` is used.
+                                       a default value defined in `interest_calc` is used.
     interest_rate2 (float, optional): Annual interest rate (in percentage) for the second period. If not provided,
-                                       it assumes the same rate as interest_rate1 or the default from `calculate_gic_interest`.
+                                       it assumes the same rate as interest_rate1 or the default from `interest_calc`.
 
     Returns:
     ----------
@@ -26,8 +28,8 @@ def calculate_gic_difference(n1_year, n2_year, principal, interest_rate1=None, i
     >>> print(f"Difference in GIC returns between 5 and 10 years: ${difference:.2f}")
     """
     # Calculate interest for both periods
-    interest_n1 = interest_calc(principal, n1_year, interest_rate1)[1]
-    interest_n2 = interest_calc(principal, n2_year, interest_rate2)[1]
+    interest_n1 = interest_calc(principal, term_length_n1, interest_rate1)[1]
+    interest_n2 = interest_calc(principal, term_length_n2, interest_rate2)[1]
 
     # Calculate total returns for both periods
     total_n1 = principal + interest_n1
