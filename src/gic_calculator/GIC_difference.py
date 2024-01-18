@@ -26,8 +26,8 @@ def calculate_gic_difference(n1_year, n2_year, principal, interest_rate1=None, i
     >>> print(f"Difference in GIC returns between 5 and 10 years: ${difference:.2f}")
     """
     # Calculate interest for both periods
-    interest_n1 = calculate_gic_interest(n1_year, principal, interest_rate1)
-    interest_n2 = calculate_gic_interest(n2_year, principal, interest_rate2)
+    interest_n1 = interest_calc(principal, n1_year, interest_rate1)[1]
+    interest_n2 = interest_calc(principal, n2_year, interest_rate2)[1]
 
     # Calculate total returns for both periods
     total_n1 = principal + interest_n1
