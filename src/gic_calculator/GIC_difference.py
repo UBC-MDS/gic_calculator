@@ -1,4 +1,4 @@
-def calculate_gic_difference(n1_year, n2_year, principal, interest_rate1=None, interest_rate2=None):
+from gic_calculator.interest_calculator import interest_calc
     """
     Calculate and return the difference in total returns between two GIC (Guaranteed Investment Certificate) investment periods.
 
