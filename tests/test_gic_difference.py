@@ -1,4 +1,4 @@
-from gic_calculator.gic_difference import gic_difference
+from gic_calculator.gic_difference import calculate_gic_difference
 import pytest
 
 
@@ -9,7 +9,7 @@ def test_equal_periods_and_rates():
 
 # Test for different periods and different interest rates
 def test_different_periods_different_rates():
-    assert round(calculate_gic_difference(1, 2, 1000, 2.5, 3.5), 2) == 46
+    assert round(calculate_gic_difference(1, 2, 1000, 2.5, 3.5), 2) == 46.22
 
 # Test for scenarios where no interest rates are provided
 def test_no_interest_rates():

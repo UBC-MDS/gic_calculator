@@ -32,6 +32,25 @@ def calculate_gic_difference(term_length_n1, term_length_n2, principal, interest
     >>> difference = calculate_gic_difference(5, 10, 1000, 2.5, 3.0)
     >>> print(f"Difference in GIC returns between 5 and 10 years: ${difference:.2f}")
     """
+
+     # Test if the inputs are numeric
+    if not (isinstance(term_length_n1, (int, float)) and
+            isinstance(term_length_n2, (int, float)) and
+            isinstance(principal, (int, float)) and
+            (interest_rate1 is None or isinstance(interest_rate1, (int, float))) and
+            (interest_rate2 is None or isinstance(interest_rate2, (int, float)))):
+        raise TypeError("term_length and principal must be entered as numeric values. gic_rate must be numeric or None type.")
+  
+    # Test if the term_length is in the allowable range
+    if term_length_n1  not in [90, 180, 270, 1, 1.5, 2, 3, 5]:
+        raise ValueError("term_length must be provided as one of the following values 90, 180, 270, 1, 1.5, 2, 3, 5.")
+    if term_length_n2  not in [90, 180, 270, 1, 1.5, 2, 3, 5]:
+        raise ValueError("term_length must be provided as one of the following values 90, 180, 270, 1, 1.5, 2, 3, 5.")
+    
+    # Test if the principal is non-negative
+    if principal < 0:
+        raise ValueError("principal must be entered as a postive numeric value.")
+    
     # Calculate interest for both periods
     interest_n1 = interest_calc(principal, term_length_n1, interest_rate1)[1]
     interest_n2 = interest_calc(principal, term_length_n2, interest_rate2)[1]
