@@ -34,6 +34,7 @@ def gic_plotting(principal, term_lengths, gic_rates=None):
     >>> gic_plotting(interests=[17.26, 96.16], term_lengths=[90, 180])
     """
 
+    # Test function inputs 
     if not isinstance(principal, float) and not isinstance(principal, int):
         raise TypeError("Principal should be a number.")
     elif principal <= 0:
@@ -49,6 +50,7 @@ def gic_plotting(principal, term_lengths, gic_rates=None):
     elif len(term_lengths) != 2:
         raise ValueError("Term lengths should contain exactly 2 terms for 2 investments")
 
+    # Define a dictionary of the units of the term_length
     default_info = {
         90: {'unit': 'days'},
         180: {'unit': 'days'},
@@ -60,6 +62,7 @@ def gic_plotting(principal, term_lengths, gic_rates=None):
         5: {'unit': 'years'}
     }
 
+    # Obtain interest rates and interests
     n = len(term_lengths)
     interests = []
     title = []
@@ -74,6 +77,7 @@ def gic_plotting(principal, term_lengths, gic_rates=None):
         title.append(f"""In {term_lengths[i]} {default_info[term_lengths[i]]['unit']}, at an interest rate of {rate:.2f}%, \
 you'll have earned ${interest:.2f} in interest.""")
 
+    # Create the bar chart of the 2 investments
     term_lengths_str = [str(i+1) + ') ' + str(term) + ' ' + default_info[term]['unit'] for i, term in enumerate(term_lengths)]
 
     plot_df = pd.DataFrame({'term_length': term_lengths_str, 'interest': interests})
@@ -83,7 +87,7 @@ you'll have earned ${interest:.2f} in interest.""")
         title=alt.Title(title)
     ).mark_bar().encode(
         x=alt.X('term_length').title('GIC Term'),
-        y=alt.Y('interest').axis(format='$~').title('Interest Earned'),
+        y=alt.Y('interest').axis(format='$~s').title('Interest Earned'),
         color=alt.value('orange')
     ).configure_scale(
         bandPaddingInner=0.5
