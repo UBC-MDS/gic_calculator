@@ -9,23 +9,14 @@ This project involves developing a Python package designed to assist users in un
 (1) interest_calc(principal, term_length, gic_rate=None)
 
 Description: Calculates the interest earned on a GIC after a specified number of years.
-Inputs: principal amount, term length of investment and GIC rate.
 
-(2) calculate_gic_difference(n1_year, n2_year, principal, interest_rate)
+(2) calculate_gic_difference(term_length_n1, term_length_n2, principal, interest_rate1, interest_rate2)
 
 Description: Calculates the difference in total returns (interest + principal) of a GIC between two different investment periods.
-Functionality: Utilizes the interest_calc function to determine the interest for two different periods and then finds the difference.
 
-(3) total_gic(principal, interest):
+(3) gic_plotting(principal, term_lengths, gic_rates)
 
-Description: Calculates the total amount for a Guaranteed Investment Certificate (GIC) after a specified number of years.
-Functionality: Utilizes the interest_calc function to determine the total amount for two different periods.
-
-(4) gic_plotting(interests, term_lengths)
-
-Description: Generates a bar plot to visually represent the difference in returns as calculated by calculate_gic_difference.
-Purpose: Helps users to easily visualize and understand the financial impact of investing for different durations.
-
+Description: Generates a bar plot to visually represent the difference in returns as calculated by interest_calc.
 
 ### Fit into the Python Ecosystem
 
@@ -35,21 +26,32 @@ By providing targeted functionality, the proposed package offers a more user-fri
 
 ## Contributors
 
-`gic_calculator` was created by Angela Chen (@angelachenmo), Tony Shum(@tonyshumlh), Ruocong Sun (@sungg888), Alysen Townsley (@AlysenTownsley).
+`gic_calculator` was created by Tony Shum(@tonyshumlh), Ruocong Sun (@sungg888), Alysen Townsley (@AlysenTownsley).
 
+## Installation
+
+1.  Clone this GitHub repository down to your local computer.
+
+2.  Create and activate a virtual environment using conda
+```
+$ conda create --name <your-env-name> python=3.9 poetry -y
+$ conda activate <your-env-name>
+```
+
+3. Navigate to the root directory of the package and install the package
+```
+$ poetry install
+```
 
 ## Usage
 
-```bash
-$ pip install gic_calculator
-```
 
 ## Developer notes
 
 #### Tests
 
 We have included tests and test data for functions used in our analysis
-in the `tests` folder. The test suite can be run at the root of the
+in the `tests` folder. The test suite can be run at the root directory of the
 project using the pytest command below:
 
 ```         
