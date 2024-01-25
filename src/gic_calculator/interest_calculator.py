@@ -26,12 +26,62 @@ def interest_calc(principal, term_length, gic_rate=None):
 
     Returns
     -------
-    float
+    gic_rate : float
+        Outputs the gic_rate utilized in the interest accrual calculation as a numeric value.
+    interest_return : float
         Outputs the total interest accrued after the investment term as a number in the same currency 
-        as the principal amount specified by the user. 
+        as the principal amount specified by the user.
 
     Examples
     --------
     >>> interest_calc(5000, 180, 3.90)
-    96.16
+    1.4, 96.16
     """
+    # Test function inputs 
+
+    # Test if the inputs are numeric
+    if not (isinstance(term_length, (int, float)) and
+            isinstance(principal, (int, float)) and
+            (gic_rate is None or isinstance(gic_rate, (int, float)))):
+        raise TypeError("term_length and principal must be entered as numeric values. gic_rate must be numeric or None type.")
+    
+    # Test if the term_length is in the allowable range
+    if term_length not in [90, 180, 270, 1, 1.5, 2, 3, 5]:
+        raise ValueError("term_length must be provided as one of the following values 90, 180, 270, 1, 1.5, 2, 3, 5.")
+    
+    # Test if the principal is non-negative
+    if principal < 0:
+        raise ValueError("principal must be entered as a postive numeric value.")
+    
+    # Define a dictionary of the default gic_rates, based on the desired term_length
+    rate_dict = {90: 1.4/100,
+                 180: 3.9/100,
+                 270: 5.1/100,
+                 1: 4.9/100,
+                 1.5: 4.8/100,
+                 2: 4.1/100,
+                 3: 4.0/100,
+                 5: 3.8/100}
+    
+    # Handle case where user specifies a GIC rate input
+    if gic_rate is not None:
+        
+        # Test if the gic_rate is a realistic value
+        if not 0 < gic_rate <= 7:
+            raise ValueError("gic_rate must be entered as a realistic value between 0 and 7.")
+                             
+        if term_length in [90, 180, 270]:
+            interest_return = principal * (1 + gic_rate/100) ** (term_length / 365) - principal
+        elif term_length in [1, 1.5, 2, 3, 5]:
+            interest_return = principal * (1 + gic_rate/100) ** (term_length) - principal
+
+    # Handle the default GIC rate case
+    if gic_rate is None:
+        gic_rate = rate_dict[term_length]
+
+        if term_length in [90, 180, 270]:
+            interest_return = principal * (1 + gic_rate) ** (term_length / 365) - principal
+        if term_length in [1, 1.5, 2, 3, 5]:
+            interest_return = principal * (1 + gic_rate) ** (term_length) - principal
+            
+    return gic_rate, interest_return
