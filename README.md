@@ -10,14 +10,11 @@ This project involves developing a Python package designed to assist users in un
 
 ### Functions Included in the Package
 
-`interest_calc(principal, term_length, gic_rate=None)`: 
-    - Calculates the interest earned on a GIC after a specified number of years.
+`interest_calc(principal, term_length, gic_rate=None)`: Calculates the interest earned on a GIC after a specified number of years.
 
-`calculate_gic_difference(term_length_n1, term_length_n2, principal, interest_rate1=None, interest_rate2=None)`: 
-    - Calculates the difference in total returns (interest + principal) of a GIC between two different investment periods.
+`calculate_gic_difference(term_length_n1, term_length_n2, principal, interest_rate1=None, interest_rate2=None)`: Calculates the difference in total returns (interest + principal) of a GIC between two different investment periods.
 
-`gic_plotting(principal, term_lengths, gic_rates=None)`: 
-    - Generates a bar plot to visually represent the difference in returns as calculated by `interest_calc`.
+`gic_plotting(principal, term_lengths, gic_rates=None)`: Generates a bar plot to visually represent the difference in returns as calculated by `interest_calc`.
 
 ### Fit into the Python Ecosystem
 
