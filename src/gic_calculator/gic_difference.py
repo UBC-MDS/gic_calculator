@@ -7,7 +7,7 @@ def calculate_gic_difference(term_length_n1, term_length_n2, principal, interest
 
     This function computes the total returns (both interest and principal) for two distinct GIC investment periods,
     using different or identical annual interest rates for each period. It then calculates the difference in these total
-    returns, effectively comparing the profitability of the two investment durations.
+    returns, effectively comparing the profitability of the two investment periods.
 
     Parameters:
     ----------
