@@ -2,7 +2,7 @@ def interest_calc(principal, term_length, gic_rate=None):
     """GIC interest accrual calculator
     
     Calculator to determine the interest to be accrued after investment in a GIC (Guarenteed Investment
-    Certificate) for a user-specifed term, principal amount and interest rate. The interest rate term is
+    Certificate) for a user-specifed term, principal amount and GIC rate. The interest rate term is
     optional and will be set to default values for the term length, in the case it is not specified by 
     the user. 
 
