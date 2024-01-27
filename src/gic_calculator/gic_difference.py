@@ -7,25 +7,30 @@ def calculate_gic_difference(term_length_n1, term_length_n2, principal, interest
 
     This function computes the total returns (both interest and principal) for two distinct GIC investment periods,
     using different or identical annual interest rates for each period. It then calculates the difference in these total
-    returns, effectively comparing the profitability of the two investment durations.
+    returns, effectively comparing the profitability of the two investment periods.
 
     Parameters:
-    ----------
-    term_length_n1 (int): The duration in days or years of the first investment period. A list of the term length (duration) per each investment. To be one of the following standard options:
-        90, 180, 270, 1, 1.5, 2, 3, or 5 correspond to 90 days, 180 days, 270 days, 1 year, 1.5 years, 2 years, 
-        3 years, 5 years.
-    term_length_n2 (int): The duration in days or years of the second investment period. A list of the term length (duration) per each investment. To be one of the following standard options:
-        90, 180, 270, 1, 1.5, 2, 3, or 5 correspond to 90 days, 180 days, 270 days, 1 year, 1.5 years, 2 years, 
-        3 years, 5 years.
-    principal (float): The initial amount of money invested in both periods.
-    interest_rate1 (float, optional): Annual interest rate (in percentage) for the first period. If not provided,
-                                       a default value defined in `interest_calc` is used.
-    interest_rate2 (float, optional): Annual interest rate (in percentage) for the second period. If not provided,
-                                       it assumes the same rate as interest_rate1 or the default from `interest_calc`.
+    ----------    
+    term_length_n1 : int 
+        The duration in days or years of the first investment period. A list of the term length (duration) per each investment. 
+        To be one of the following standard options: 
+        90, 180, 270, 1, 1.5, 2, 3, or 5 correspond to 90 days, 180 days, 270 days, 1 year, 1.5 years, 2 years, 3 years, 5 years.
+    term_length_n2 : int
+        The duration in days or years of the second investment period. A list of the term length (duration) per each investment. 
+        To be one of the following standard options:
+        90, 180, 270, 1, 1.5, 2, 3, or 5 correspond to 90 days, 180 days, 270 days, 1 year, 1.5 years, 2 years, 3 years, 5 years.
+    principal : float
+        The initial amount of money invested in both periods.
+    interest_rate1 : float, optional
+        Annual interest rate (in percentage) for the first period. If not provided, a default value defined in `interest_calc` is used.
+    interest_rate2 : float, optional 
+        Annual interest rate (in percentage) for the second period. If not provided, it assumes the same rate as interest_rate1 or the 
+        default from `interest_calc`.
 
     Returns:
     ----------
-    float: The difference in the total returns (sum of interest and principal) between the two investment periods.
+    float : 
+        The difference in the total returns (sum of interest and principal) between the two investment periods.
 
     Example:
     ----------
@@ -63,3 +68,5 @@ def calculate_gic_difference(term_length_n1, term_length_n2, principal, interest
     return_difference = total_n2 - total_n1
 
     return round(return_difference, 2)
+
+
