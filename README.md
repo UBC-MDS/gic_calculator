@@ -1,22 +1,20 @@
 # gic_calculator
 
+[![ci-cd](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml) [![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/) [![Documentation Status](https://readthedocs.org/projects/gic-calculator/badge?version=latest)](https://gic-calculator.readthedocs.io/en/latest/?badge=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![version](https://img.shields.io/github/v/release/UBC-MDS/gic_calculator) ![release](https://img.shields.io/github/release-date/UBC-MDS/gic_calculator)
+
 ## Summary
 
 ### Project Summary
+
 This project involves developing a Python package designed to assist users in understanding and analyzing the financial returns from Guaranteed Investment Certificates (GICs). The package focuses on calculating the interest returns over different investment periods, comparing these returns, and providing a visual representation of the differences. This utility will be particularly useful for investors and financial advisors who need to make informed decisions regarding GIC investments.
 
 ### Functions Included in the Package
-(1) interest_calc(principal, term_length, gic_rate=None)
 
-Description: Calculates the interest earned on a GIC after a specified number of years.
+`interest_calc(principal, term_length, gic_rate=None)`: Calculates the interest earned on a GIC after a specified number of years.
 
-(2) calculate_gic_difference(term_length_n1, term_length_n2, principal, interest_rate1, interest_rate2)
+`calculate_gic_difference(term_length_n1, term_length_n2, principal, interest_rate1=None, interest_rate2=None)`: Calculates the difference in total returns (interest + principal) of a GIC between two different investment periods.
 
-Description: Calculates the difference in total returns (interest + principal) of a GIC between two different investment periods.
-
-(3) gic_plotting(principal, term_lengths, gic_rates)
-
-Description: Generates a bar plot to visually represent the difference in returns as calculated by interest_calc.
+`gic_plotting(principal, term_lengths, gic_rates=None)`: Generates a bar plot to visually represent the difference in returns as calculated by `interest_calc`.
 
 ### Fit into the Python Ecosystem
 
@@ -45,6 +43,28 @@ $ poetry install
 
 ## Usage
 
+`gic_calculator` can be used to calculate interest accrual on a GIC of varying term lengths or GIC rates, as follows: 
+
+```
+from gic_calculator.interest_calculator import interest_calc
+interest_calc(5000, 1)
+interest_calc(5000, 1, 5.5)
+```
+
+`gic_calculator` can be used to calculate the difference in total return (interest + principal) of a GIC between two different investment periods, as follows: 
+
+```
+from gic_calculator.gic_difference import calculate_gic_difference
+calculate_gic_difference(1, 3, 5000)
+calculate_gic_difference(1, 3, 5000, 5.5, 3.5)
+```
+
+`gic_calculator` can be used to create a bar plot to visually represent the difference in returns as calculated by `interest_calc`, as follows: 
+
+```
+from gic_calculator.gic_plotting import gic_plotting
+gic_plotting(5000, [1, 3])
+```
 
 ## Developer notes
 
@@ -57,7 +77,6 @@ project using the pytest command below:
 ```         
 pytest tests/*
 ```
-
 
 ## Contributing
 

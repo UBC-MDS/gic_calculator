@@ -54,14 +54,14 @@ def interest_calc(principal, term_length, gic_rate=None):
         raise ValueError("principal must be entered as a postive numeric value.")
     
     # Define a dictionary of the default gic_rates, based on the desired term_length
-    rate_dict = {90: 1.4/100,
-                 180: 3.9/100,
-                 270: 5.1/100,
-                 1: 4.9/100,
-                 1.5: 4.8/100,
-                 2: 4.1/100,
-                 3: 4.0/100,
-                 5: 3.8/100}
+    rate_dict = {90: 1.4,
+                 180: 3.9,
+                 270: 5.1,
+                 1: 4.9,
+                 1.5: 4.8,
+                 2: 4.1,
+                 3: 4.0,
+                 5: 3.8}
     
     # Handle case where user specifies a GIC rate input
     if gic_rate is not None:
@@ -80,8 +80,8 @@ def interest_calc(principal, term_length, gic_rate=None):
         gic_rate = rate_dict[term_length]
 
         if term_length in [90, 180, 270]:
-            interest_return = principal * (1 + gic_rate) ** (term_length / 365) - principal
+            interest_return = principal * (1 + gic_rate/100) ** (term_length / 365) - principal
         if term_length in [1, 1.5, 2, 3, 5]:
-            interest_return = principal * (1 + gic_rate) ** (term_length) - principal
+            interest_return = principal * (1 + gic_rate/100) ** (term_length) - principal
             
-    return gic_rate, interest_return
+    return gic_rate, round(interest_return, 2)
