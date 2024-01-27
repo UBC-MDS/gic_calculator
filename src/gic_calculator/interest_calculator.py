@@ -84,4 +84,6 @@ def interest_calc(principal, term_length, gic_rate=None):
         if term_length in [1, 1.5, 2, 3, 5]:
             interest_return = principal * (1 + gic_rate/100) ** (term_length) - principal
             
+
     return gic_rate, round(interest_return, 2)
+
