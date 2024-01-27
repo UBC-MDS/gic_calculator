@@ -67,6 +67,6 @@ def calculate_gic_difference(term_length_n1, term_length_n2, principal, interest
     # Calculate the difference in returns
     return_difference = total_n2 - total_n1
 
-    return round(return_difference, 2)
 
+    return round(return_difference, 2)
 
