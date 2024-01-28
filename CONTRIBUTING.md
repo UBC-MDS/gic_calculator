@@ -62,6 +62,40 @@ Ready to contribute? Here's how to set up `gic_calculator` for local development
 
 5. Commit your changes and open a pull request.
 
+1. Fork the convertempPy repo on GitHub.
+
+2. Clone your fork locally:
+    ```console
+    $ git clone git@github.com:UBC-MDS/gic_calculator.git
+    ```
+
+3. Install your local copy with Poetry, this is how you set up your fork for local development:
+    ```console
+    $ cd gic_calculator/
+    $ poetry install
+    ```
+
+4. Create a branch for local development:
+    ```console
+    $ git checkout -b name-of-your-bugfix-or-feature
+    ```
+
+Now you can make your changes locally.
+
+5. When you're done making changes, check that your changes pass the tests by running pytest
+    ```console
+    $ poetry run pytest
+    ```
+
+6. Commit your changes and push your branch to GitHub:
+    ```console
+    $ git add .
+    $ git commit -m "Your detailed description of your changes."
+    $ git push origin name-of-your-bugfix-or-feature
+    ```
+
+7. Submit a pull request through the GitHub website.
+
 ## Pull Request Guidelines
 
 Before you submit a pull request, check that it meets these guidelines:
