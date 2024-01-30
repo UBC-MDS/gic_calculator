@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gic_calculator"
-version = "0.1.0"
+version = "2.0.0"
 description = "CalculateGIC interets and payout with comparison and plots."
 authors = ["Angela Chen, Tony Shum, Ruocong Sun, Alysen Townsley"]
 license = "MIT"
