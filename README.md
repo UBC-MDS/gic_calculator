@@ -6,7 +6,7 @@
 
 ### Project Summary
 
-This project involves developing a Python package designed to assist users in understanding and analyzing the financial returns from Guaranteed Investment Certificates (GICs). This [`link`](https://www.td.com/ca/en/personal-banking/personal-investing/products/gic/what-is-a-gic#:~:text=In%20Canada%2C%20a%20guaranteed%20investment,few%20months%20to%20several%20years.) explains what a GIC is in more detail. The package focuses on calculating the interest returns over different investment periods, comparing these returns, and providing a visual representation of the differences. This utility will be particularly useful for investors and financial advisors who need to make informed decisions regarding GIC investments.
+This project involves developing a Python package designed to assist users in understanding and analyzing the financial returns from Guaranteed Investment Certificates (GICs). This [`link`](https://www.td.com/ca/en/personal-banking/personal-investing/products/gic/what-is-a-gic) explains what a GIC is in more detail. The package focuses on calculating the interest returns over different investment periods, comparing these returns, and providing a visual representation of the differences. This utility will be particularly useful for investors and financial advisors who need to make informed decisions regarding GIC investments.
 
 Website: [`https://gic-calculator.readthedocs.io/en/latest/`](https://gic-calculator.readthedocs.io/en/latest/?badge=latest)
 
@@ -91,3 +91,11 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 ## Credits
 
 `gic_calculator` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
+## References
+
+1. Jacob VanderPlas, Brian Granger, Jeffrey Heer, Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Eitan Lees, Ilia Timofeev, Ben Welsh, and Scott Sievert. Altair: interactive statistical visualizations for python. Journal of open source software, 3(32):1057, 2018.
+2. Guido Van Rossum and Fred L. Drake. Python 3 Reference Manual. CreateSpace, Scotts Valley, CA, 2009. ISBN 1441412697.
+3. Krekel et al., pytest 7.4, 2004. [https://github.com/pytest-dev/pytest](https://github.com/pytest-dev/pytest)
+4. TD Canada Trust. (n.d.). What is a GIC? Retrieved January 30, 2024, from [https://www.td.com/ca/en/personal-banking/personal-investing/products/gic/what-is-a-gic](https://www.td.com/ca/en/personal-banking/personal-investing/products/gic/what-is-a-gic)
+5. UBC MDS. (n.d.). Collaborative Software Development Course Notes Retrieved from [https://pages.github.ubc.ca/MDS-2023-24/DSCI_524_collab-sw-dev_book/materials/lectures/](https://pages.github.ubc.ca/MDS-2023-24/DSCI_524_collab-sw-dev_book/README.html)
