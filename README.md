@@ -8,7 +8,7 @@
 
 This project involves developing a Python package designed to assist users in understanding and analyzing the financial returns from Guaranteed Investment Certificates (GICs). The package focuses on calculating the interest returns over different investment periods, comparing these returns, and providing a visual representation of the differences. This utility will be particularly useful for investors and financial advisors who need to make informed decisions regarding GIC investments.
 
-Website: [`https://gic-calculator.readthedocs.io/en/latest/?badge=latest`](https://gic-calculator.readthedocs.io/en/latest/?badge=latest)
+Website: [`https://gic-calculator.readthedocs.io/en/latest/`](https://gic-calculator.readthedocs.io/en/latest/?badge=latest)
 
 ### Functions Included in the Package
 
