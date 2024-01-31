@@ -1,12 +1,14 @@
 # gic_calculator
 
-[![ci-cd](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml) [![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/) [![Documentation Status](https://readthedocs.org/projects/gic-calculator/badge?version=latest)](https://gic-calculator.readthedocs.io/en/latest/?badge=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![version](https://img.shields.io/github/v/release/UBC-MDS/gic_calculator) ![release](https://img.shields.io/github/release-date/UBC-MDS/gic_calculator)
+[![ci-cd](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml) [![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/) [![Documentation Status](https://readthedocs.org/projects/gic-calculator/badge?version=latest)](https://gic-calculator.readthedocs.io/en/latest/?badge=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![version](https://img.shields.io/github/v/release/UBC-MDS/gic_calculator) ![release](https://img.shields.io/github/release-date/UBC-MDS/gic_calculator) [![codecov](https://codecov.io/gh/UBC-MDS/gic_calculator/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/gic_calculator)
 
 ## Summary
 
 ### Project Summary
 
 This project involves developing a Python package designed to assist users in understanding and analyzing the financial returns from Guaranteed Investment Certificates (GICs). The package focuses on calculating the interest returns over different investment periods, comparing these returns, and providing a visual representation of the differences. This utility will be particularly useful for investors and financial advisors who need to make informed decisions regarding GIC investments.
+
+Website: [`https://gic-calculator.readthedocs.io/en/latest/?badge=latest`](https://gic-calculator.readthedocs.io/en/latest/?badge=latest)
 
 ### Functions Included in the Package
 
