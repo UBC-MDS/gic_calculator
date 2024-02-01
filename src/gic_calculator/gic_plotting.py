@@ -31,7 +31,7 @@ def gic_plotting(principal, term_lengths, gic_rates=None):
     Examples
     --------
     >>> from gic_calculator.gic_plotting import gic_plotting
-    >>> gic_plotting(interests=[17.26, 96.16], term_lengths=[90, 180])
+    >>> gic_plotting(principal=1000, term_lengths=[90, 180])
     """
 
     # Test function inputs 
