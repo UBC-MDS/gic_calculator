@@ -2,9 +2,26 @@
 
 
 
+## v2.0.2 (2024-02-01)
+
+### Unknown
+
+* Merge pull request #63 from UBC-MDS/readme_updates_milestone4
+
+Milestone 4 README updates to address peer feedback ([`de95e3c`](https://github.com/UBC-MDS/gic_calculator/commit/de95e3c5baf5978e75999cd05cad6fec776f103d))
+
+
 ## v2.0.1 (2024-01-31)
 
 ### Fix
+
+* fix: Added references to README.md ([`23679da`](https://github.com/UBC-MDS/gic_calculator/commit/23679da0a67e013185a83ccef749f41c97323607))
+
+* fix: Feedback addressed by adding a link to a general explanation of what a GIC is. ([`53ec2b7`](https://github.com/UBC-MDS/gic_calculator/commit/53ec2b74435e99f9f2d5b9e1d9f86092c38a12f9))
+
+* fix: Formatting change to RTD website URL. ([`71136ef`](https://github.com/UBC-MDS/gic_calculator/commit/71136ef57fa677b49f245bcee1da132d0ffac434))
+
+* fix: Feedback addressed by adding the codecov badge and RTD website link ([`a03b953`](https://github.com/UBC-MDS/gic_calculator/commit/a03b95350b48388c17662f342ba7fafc792173c1))
 
 * fix: complete CICD setup for Github Actions ([`f457917`](https://github.com/UBC-MDS/gic_calculator/commit/f4579173d30b50c2a8f7838131a0ce230b0431e4))
 
