@@ -24,3 +24,24 @@ def test_zero_principal():
 def test_negative_principal():
     with pytest.raises(ValueError):
         calculate_gic_difference(1, 2, -1000, 2.5, 3.0)
+
+# Test if the inputs are numeric
+def test_assert_numeric_input():
+    """Tests that the user inputs are numeric"""
+    with pytest.raises(TypeError):
+        calculate_gic_difference([1, 3], 90, 1000, 2.5, 3.0)
+    with pytest.raises(TypeError):
+        calculate_gic_difference(90, [1, 3], 1000, 2.5, 3.0)
+    with pytest.raises(TypeError):
+        calculate_gic_difference(1, 90, '1000', 2.5, 3.0)
+    with pytest.raises(TypeError):
+        calculate_gic_difference(1, 90, 1000, '2.5', 3.0)
+    with pytest.raises(TypeError):
+        calculate_gic_difference(1, 90, 1000, 2.5, '3.0')
+
+# Test if the term_length input is in the allowable range
+def test_assert_term_length_range():
+    with pytest.raises(ValueError):
+        calculate_gic_difference(524, 90, 1000, 2.5, 3.0)
+    with pytest.raises(ValueError):
+        calculate_gic_difference(90, 524, 1000, 2.5, 3.0)

@@ -1,8 +1,8 @@
 # IMPORTS:
 import sys
 import os
-sys.path.append(os.path.join(os.path.dirname(__file__), '../src/gic_calculator')) # set path
-from interest_calculator import interest_calc # import interest_caalc function
+# sys.path.append(os.path.join(os.path.dirname(__file__), '../src/gic_calculator')) # set path
+from gic_calculator.interest_calculator import interest_calc # import interest_caalc function
 import math 
 import pytest
 
