@@ -2,10 +2,10 @@
 
 
 <figure>
-    <img src="https://github.com/UBC-MDS/gic_calculator/blob/main/img/hex-gic_calculator.png?raw=true" width="200" height="200">
+    <img src="https://github.com/UBC-MDS/gic_calculator/blob/main/img/hex-gic_calculator.png?raw=true" width="175" height="175">
 </figure>
 
-[![ci-cd](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml) [![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/) [![Documentation Status](https://readthedocs.org/projects/gic-calculator/badge?version=latest)](https://gic-calculator.readthedocs.io/en/latest/?badge=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![version](https://img.shields.io/github/v/release/UBC-MDS/gic_calculator) ![release](https://img.shields.io/github/release-date/UBC-MDS/gic_calculator)
+[![ci-cd](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml) [![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/) [![Documentation Status](https://readthedocs.org/projects/gic-calculator/badge?version=latest)](https://gic-calculator.readthedocs.io/en/latest/?badge=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![version](https://img.shields.io/github/v/release/UBC-MDS/gic_calculator) ![release](https://img.shields.io/github/release-date/UBC-MDS/gic_calculator) [![codecov](https://codecov.io/gh/UBC-MDS/gic_calculator/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/gic_calculator) ![PyPi](https://img.shields.io/pypi/v/gic_calculator)
 
 
 ## Summary
@@ -104,4 +104,6 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 2. Guido Van Rossum and Fred L. Drake. Python 3 Reference Manual. CreateSpace, Scotts Valley, CA, 2009. ISBN 1441412697.
 3. Krekel et al., pytest 7.4, 2004. [https://github.com/pytest-dev/pytest](https://github.com/pytest-dev/pytest)
 4. TD Canada Trust. (n.d.). What is a GIC? Retrieved January 30, 2024, from [https://www.td.com/ca/en/personal-banking/personal-investing/products/gic/what-is-a-gic](https://www.td.com/ca/en/personal-banking/personal-investing/products/gic/what-is-a-gic)
-5. UBC MDS. (n.d.). Collaborative Software Development Course Notes Retrieved from [https://pages.github.ubc.ca/MDS-2023-24/DSCI_524_collab-sw-dev_book/materials/lectures/](https://pages.github.ubc.ca/MDS-2023-24/DSCI_524_collab-sw-dev_book/README.html)
+5. D'Andrea et al., DSCI 524: Collaborative Software Development Course Notes, 2022. [https://pages.github.ubc.ca/MDS-2023-24/DSCI_524_collab-sw-dev_book/materials/lectures/](https://pages.github.ubc.ca/MDS-2023-24/DSCI_524_collab-sw-dev_book/README.html)
+6. Choosealicense.com. (n.d.). Licenses. Retrieved February 2, 2024, from [https://choosealicense.com/licenses/](https://choosealicense.com/licenses/)
+7. Creative Commons. (n.d.). License Chooser. Retrieved February 2, 2024, from [https://chooser-beta.creativecommons.org/](https://chooser-beta.creativecommons.org/)
