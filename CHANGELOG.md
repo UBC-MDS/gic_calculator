@@ -2,9 +2,34 @@
 
 
 
-## v2.0.2 (2024-02-01)
+## v2.0.3 (2024-02-02)
+
+### Documentation
+
+* docs: update the docstring of gic_plotting ([`fc9f5ea`](https://github.com/UBC-MDS/gic_calculator/commit/fc9f5ead8767f9408992aaabb1eaa461a7cce3af))
 
 ### Unknown
+
+* Merge pull request #64 from UBC-MDS/add_repo_logo
+
+Adding repo logo to img folder and README.md ([`1663afd`](https://github.com/UBC-MDS/gic_calculator/commit/1663afdc521af161bbe96d75e7676d1970896310))
+
+* Merge pull request #68 from UBC-MDS/visualization_function
+
+docs: update the docstring of gic_plotting ([`8d376f9`](https://github.com/UBC-MDS/gic_calculator/commit/8d376f946c4e009e90dac5f98d71ee09145b2f96))
+
+
+## v2.0.2 (2024-02-01)
+
+### Fix
+
+* fix: Adding repo logo into Readme.md ([`d3e02c9`](https://github.com/UBC-MDS/gic_calculator/commit/d3e02c9d7aa54cb04095b387693cce03224def24))
+
+* fix: adding repo logo ([`6aa73f8`](https://github.com/UBC-MDS/gic_calculator/commit/6aa73f818c0f55a49b9597e40890b2c54369e060))
+
+### Unknown
+
+* Merge branch &#39;main&#39; into add_repo_logo ([`47a7c20`](https://github.com/UBC-MDS/gic_calculator/commit/47a7c20d5ede106a0c9c20023224f39224902087))
 
 * Merge pull request #63 from UBC-MDS/readme_updates_milestone4
 
