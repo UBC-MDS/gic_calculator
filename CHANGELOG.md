@@ -2,6 +2,19 @@
 
 
 
+## v2.0.5 (2024-02-02)
+
+### Fix
+
+* fix: Update installation guidelines in README.md ([`8a47757`](https://github.com/UBC-MDS/gic_calculator/commit/8a4775764c86ba546c56b89a2b8d4c53082d6578))
+
+### Unknown
+
+* Merge pull request #70 from UBC-MDS/readme_update_ms4
+
+fix: Update installation guidelines in README.md ([`5f8c175`](https://github.com/UBC-MDS/gic_calculator/commit/5f8c17555f7b95b3ad79cedc64ad620d1c9274ca))
+
+
 ## v2.0.4 (2024-02-02)
 
 ### Fix
