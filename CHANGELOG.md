@@ -2,6 +2,21 @@
 
 
 
+## v2.0.4 (2024-02-02)
+
+### Fix
+
+* fix: Added PyPi badge ([`cfcff94`](https://github.com/UBC-MDS/gic_calculator/commit/cfcff94b86ed87e5b820cd9fccb8d11df4d423ee))
+
+* fix: Update README.md with references and code cov button ([`d92da11`](https://github.com/UBC-MDS/gic_calculator/commit/d92da1126e948489dbcb559218e80834374972ae))
+
+### Unknown
+
+* Merge pull request #69 from UBC-MDS/readme_update_ms4
+
+fix: Update README.md with references and code cov button ([`1171fee`](https://github.com/UBC-MDS/gic_calculator/commit/1171fee4c1127044b98dd58020ce2b7cc85154aa))
+
+
 ## v2.0.3 (2024-02-02)
 
 ### Documentation
