@@ -36,18 +36,22 @@ By providing targeted functionality, the proposed package offers a more user-fri
 
 ## Installation
 
-1.  Clone this GitHub repository down to your local computer.
+#### For User
 
-2.  Create and activate a virtual environment using conda
+1.  (Optional) Create and activate a virtual environment using conda
 ```
-$ conda create --name <your-env-name> python=3.9 poetry -y
-$ conda activate <your-env-name>
+conda create --name <your-env-name> pip -y
+conda activate <your-env-name>
 ```
 
-3. Navigate to the root directory of the package and install the package
+2. Install the package using the command below
 ```
-$ poetry install
+pip install gic_calculator
 ```
+
+#### For Developer
+
+Please refer to the `Developer Notes` session below
 
 ## Usage
 
@@ -74,7 +78,22 @@ from gic_calculator.gic_plotting import gic_plotting
 gic_plotting(5000, [1, 3])
 ```
 
-## Developer notes
+## Developer Notes
+
+#### Installation
+
+1.  Clone this GitHub repository down to your local computer.
+
+2.  Create and activate a virtual environment using conda
+```
+conda create --name <your-env-name> python=3.9 poetry -y
+conda activate <your-env-name>
+```
+
+3. Navigate to the root directory of the package and install the package
+```
+poetry install
+```
 
 #### Tests
 
