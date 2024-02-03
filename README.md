@@ -111,7 +111,9 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## License
 
-`gic_calculator` is licensed under the terms of the MIT license.
+`gic_calculator` is licensed under the terms of the MIT license and Creative Commons Attribution 4.0 International License.
+ - For the software code provided in this repository, the MIT License applies.
+ - For written works, including tutorials and documentation, the Creative Commons Attribution 4.0 International License (CC BY 4.0) applies.
 
 ## Credits
 

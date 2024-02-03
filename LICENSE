@@ -1,3 +1,9 @@
+# License Information
+
+## Software License
+
+The software code provided in this repository is licensed under the MIT License. The terms of the MIT License are as follows:
+
 MIT License
 
 Copyright (c) 2024, Angela Chen, Tony Shum, Ruocong Sun, Alysen Townsley
@@ -19,4 +25,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Written Work License
+
+Creative Commons Attribution 4.0 International License
+
+The written content provided in this repository, including but not limited to tutorials, documentation, and the example notebook (`example.ipynb`), is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
 
