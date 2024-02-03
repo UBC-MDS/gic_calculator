@@ -2,6 +2,23 @@
 
 
 
+## v4.0.0 (2024-02-03)
+
+### Breaking
+
+* feat!: Update README.md for major version bump
+
+Version bump for Milestone 4.
+
+BREAKING CHANGES: Version bump for Milestone 4. ([`109ff92`](https://github.com/UBC-MDS/gic_calculator/commit/109ff92b469285d2b7dc36c6bd64970636adfa00))
+
+### Unknown
+
+* Merge pull request #75 from UBC-MDS/readme_update_release_version
+
+feat!: Update README.md for major version bump ([`83369b1`](https://github.com/UBC-MDS/gic_calculator/commit/83369b120716aca8dadc726fa98dcc4d877d09be))
+
+
 ## v3.0.0 (2024-02-03)
 
 ### Breaking
