@@ -31,7 +31,7 @@ def test_gic_plotting_invalid_gic_rates():
 def test_gic_plotting_invalid_term_lengths():
     for i in term_lengths_invalid:
         with pytest.raises((ValueError, TypeError)):
-            gic_plotting(principal_valid, term_lengths_invalid, gic_rates_valid)
+            gic_plotting(principal_valid, i, gic_rates_valid)
 
 # Test gic_plotting function can output non-empty Altair Chart
 def test_gic_plotting_non_empty_chart():
