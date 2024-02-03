@@ -2,6 +2,39 @@
 
 
 
+## v3.0.0 (2024-02-03)
+
+### Breaking
+
+* feat!: Update LICENSE for major version bump
+
+Version bump for Milestone 4.
+
+BREAKING CHANGES: Version bump for Milestone 4. ([`758e313`](https://github.com/UBC-MDS/gic_calculator/commit/758e313c4d765c6f8f5a384b49282d214191c35e))
+
+### Unknown
+
+* Merge pull request #74 from UBC-MDS/update_release_version_ms4
+
+feat!: Update LICENSE for major version bump
+
+BREAKING CHANGES: Version bump for Milestone 4. ([`a43bd73`](https://github.com/UBC-MDS/gic_calculator/commit/a43bd73500d625902d92455b859b7158b58f0543))
+
+* Merge pull request #72 from UBC-MDS/updatelicense
+
+add CC4.0 licence ([`061962e`](https://github.com/UBC-MDS/gic_calculator/commit/061962e39754a097369bbaa9e2909e9f166cd998))
+
+* add readme badge ([`58e8c57`](https://github.com/UBC-MDS/gic_calculator/commit/58e8c57a3b15d6ea9e96c546f1d4437a6e4cafb9))
+
+* add CC4.0 licence ([`6fb818e`](https://github.com/UBC-MDS/gic_calculator/commit/6fb818ee5be5e81ed72cb6f321d6b8dcd6c6b2bc))
+
+* Merge pull request #71 from UBC-MDS/improve_function_coverage
+
+Update the test cases for test coverage ([`9f417d9`](https://github.com/UBC-MDS/gic_calculator/commit/9f417d97d04b09fe1523daccaa6041a5baeaf2bf))
+
+* Update the test cases for test coverage ([`8c59584`](https://github.com/UBC-MDS/gic_calculator/commit/8c59584e6a01deaf069f0f72a19c8a737d1b2006))
+
+
 ## v2.0.5 (2024-02-02)
 
 ### Fix
