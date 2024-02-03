@@ -5,7 +5,7 @@
     <img src="https://github.com/UBC-MDS/gic_calculator/blob/main/img/hex-gic_calculator.png?raw=true" width="175" height="175">
 </figure>
 
-[![ci-cd](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml) [![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/) [![Documentation Status](https://readthedocs.org/projects/gic-calculator/badge?version=latest)](https://gic-calculator.readthedocs.io/en/latest/?badge=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![version](https://img.shields.io/github/v/release/UBC-MDS/gic_calculator) ![release](https://img.shields.io/github/release-date/UBC-MDS/gic_calculator) [![codecov](https://codecov.io/gh/UBC-MDS/gic_calculator/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/gic_calculator) ![PyPi](https://img.shields.io/pypi/v/gic_calculator)
+[![ci-cd](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/gic_calculator/actions/workflows/ci-cd.yml) [![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/) [![Documentation Status](https://readthedocs.org/projects/gic-calculator/badge?version=latest)](https://gic-calculator.readthedocs.io/en/latest/?badge=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![License: CC 4.0](https://img.shields.io/badge/License-CC4.0-yellow.svg)](http://creativecommons.org/licenses/by/4.0/) ![version](https://img.shields.io/github/v/release/UBC-MDS/gic_calculator) ![release](https://img.shields.io/github/release-date/UBC-MDS/gic_calculator) [![codecov](https://codecov.io/gh/UBC-MDS/gic_calculator/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/gic_calculator) ![PyPi](https://img.shields.io/pypi/v/gic_calculator)
 
 
 ## Summary
@@ -111,7 +111,9 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## License
 
-`gic_calculator` is licensed under the terms of the MIT license.
+`gic_calculator` is licensed under the terms of the MIT license and Creative Commons Attribution 4.0 International License.
+ - For the software code provided in this repository, the MIT License applies.
+ - For written works, including tutorials and documentation, the Creative Commons Attribution 4.0 International License (CC BY 4.0) applies.
 
 ## Credits
 
